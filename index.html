@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推送</title>
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/model.css">
+    <script src="./static/js/index.js"></script>
+</head>
+<header>
+    <ul class="nav">
+        <li><a href="./index.html">首 页</a></li>
+        <li><a href="./help.html">帮 助</a></li>
+        <li><a href="./login.html">登 录</a></li>
+        <li id="unlogin_btn"><a href="./unlogin.php">登 出</a></li>
+        <li><a href="./other.html">其 他</a></li>
+    </ul>
+</header>
+
+<body>
+    <img class="icoImg" src="./static/img/ICO.png" alt="ICO">
+
+    <!-- <div class="textEdit">
+        <select name="selectType" id="selectType">
+            <option value="text">文本消息</option>
+            <option value="textcard">文本卡片</option>
+            <option value="markdown">Markdown</option>
+            <option value="news">图文消息</option>
+            <option value="video">视频消息</option>
+            <option value="image">图片消息</option>
+            <option value="voice">音频消息</option>
+            <option value="file">其他文件</option>
+        </select>
+    </div> -->
+
+    <div id="selectM">
+
+        <input id="text_btn" type="radio" name="hopping" value="text_btn" checked>
+        <label for="text_btn"><span></span>文本消息
+        </label>
+        <input id="textCard_btn" type="radio" name="hopping" value="textCard_btn">
+        <label for="textCard_btn"><span></span>文本卡片
+        </label>
+        <div class="worm">
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+            <div class="worm__segment"></div>
+        </div>
+    </div>
+
+
+    <!-- 优化：将form表单提交时的无用信息删掉 -->
+    <!-- 再次优化：无刷新提交,通过js提交， -->
+    <div class="returnInfo" id="returnInfo">暂无返回信息</div>
+
+    <div name="textBox" id="textBox">
+        <textarea name="text" cols="40" rows="10" id="text" placeholder="请输入内容"></textarea>
+    </div>
+
+    <div name="textcardBox" id="textcardBox">
+        <p><input type="text" name="textcard_title" id="textcard_title" placeholder="推送标题"></p>
+        <!-- <p><input type="text" name="textcard_description" id="textcard_description" placeholder="推送内容"></p> -->
+        <p><textarea name="textcard_description" id="textcard_description" cols="10" rows="4" placeholder="推送内容"></textarea></p>
+        <p><input type="text" name="textcard_url" id="textcard_url" placeholder="跳转链接"></p>
+    </div>
+
+
+
+
+    <button id="jsPush" type="submit" on>发送</button>
+
+</body>
+
+</html>
