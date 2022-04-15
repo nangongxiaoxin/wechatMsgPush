@@ -1,0 +1,159 @@
+*{  
+    font: 1em Hind, sans-serif;
+}
+
+body{
+    /* background: #e3e4e8; */
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    color: #17181c;
+    /* font-size: 16px; */
+    font: 1em Hind, sans-serif;
+}
+
+/* header部分 */
+.nav{
+    width: 1006.7px;
+    height: 50px;
+    margin: 10px auto;
+    /* 后面需要去掉 */
+    /* background-color: #E19AFA; */
+}
+.nav li{
+    float: left;
+    line-height: 50px;
+}
+.nav a{
+    padding: 0 80px;
+    display: block;
+    text-decoration: none;
+    color: green;
+    font-size:18px;
+}
+.nav a:hover{
+    background-color: #EAF2D3   ;
+    color: #777777;
+    border-radius: 25px;
+    box-shadow: 0 0 15px #EAF2D3;
+}
+
+/* body部分 */
+.icoImg{
+    width: 100px;
+    height: 100px;
+    /* relative相对于原来的位置的定位 */
+    /* absolute相对于最近祖先开启的定位而设置的定位 */
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+#jsPush{
+    background-color: aqua;
+    color: rgb(179, 135, 135);
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top:850px;
+    left:50%;
+    margin-left: -50px;
+    border-radius: 30px;
+}
+#jsPush:hover{
+    color: rgb(10, 24, 24);
+    box-shadow: 0 0 15px #343828;
+}
+
+/* 信息返回 */
+#returnInfo{
+    width: 200px;
+    height:  100px;
+    font-size: 16px;
+    /* background-color: pink; */
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    position: absolute;
+    top: 300px;
+    right: 20%;
+    word-wrap: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* 文本提交部分 */
+
+/* text */
+#text{
+    width: 600px;
+    height: 500px;
+    display: block;
+    position: absolute;
+    top:300px;
+    left:50%;
+    margin-left: -300px;
+    resize:none;
+}
+
+/* textcard */
+#textcardBox{
+    display: none;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -300px;
+    /* background-color: red; */
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+#textcardBox #textcard_title,#textcard_url{
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+/* 禁止拉伸标签 */
+#textcardBox #textcard_description{
+    display: block;
+    position: relative;
+    top: 10px;
+    resize: none;
+    height: 150px;
+    width: 400px;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+#textcardBox #textcard_description::-webkit-input-placeholder{
+    text-align: center;
+}
+
+#textcardBox #textcard_url{
+    display: block;
+    position: relative;
+    top: 140px;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+#textcardBox p{
+    /* display: block; */
+    position: relative;
+    text-align: center;
+    height: 70px;
+    top:100px;
+}
+/* w600 h500 */
+
+
+
+

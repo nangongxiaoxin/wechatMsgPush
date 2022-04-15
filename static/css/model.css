@@ -1,0 +1,276 @@
+
+  #selectM{
+    width: 200px;
+    height: 100px;
+    /* background-color: yellowgreen; */
+    display: block;
+    /* margin: auto; */
+    
+    max-width: 200px;
+    position: absolute;
+    /* margin: 0 auto; */
+    /* top: 180px;*/
+    /* right: 100px;  */
+    left: 50%;
+    margin-left: -100px;
+    top: 230px;
+}
+
+
+  #selectM input {
+    position: fixed;
+    top: -1.5em;
+    left: -1.5em;
+  }
+  
+  #selectM label #a{
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+   
+    text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
+    transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+  #selectM label #b{
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+
+    text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
+    transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+  #selectM label:not(:last-of-type) {
+    margin-bottom: 1.5em;
+  }
+  #selectM label span {
+    box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2), 0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
+    display: inline-block;
+    margin-right: 0.5em;
+    vertical-align: bottom;
+    width: 1.5em;
+    height: 1.5em;
+    transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2), box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+  
+  #selectM label span,
+  #selectM .worm__segment:before {
+    border-radius: 50%;
+  }
+  
+  #selectM input:checked + label,
+  #selectM input:checked + label span,
+  #selectM .worm__segment:before {
+    color: #255ff4;
+  }
+  
+  #selectM input:checked + label,
+  #selectM input:checked + label span {
+    transition-delay: 0.4s;
+  }
+  #selectM input:checked + label span {
+    transform: scale(1.2);
+  }
+  /* 蓝色点起始位置 */
+  #selectM .worm {
+    top: 0.375em;
+    /* top: 10em; */
+    left: 0.375em;
+  }
+  #selectM .worm,
+  #selectM .worm__segment {
+    position: absolute;
+  }
+
+  /* 蓝色点位置及大小 */
+  #selectM .worm__segment {
+    top: 0;
+    left: 0;
+    width: 0.75em;
+    height: 0.75em;
+    transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+  #selectM .worm__segment:before {
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    background: currentColor;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #selectM .worm__segment:first-child:before,
+  #selectM .worm__segment:last-child:before {
+    box-shadow: 0 0 1em 0 currentColor;
+  }
+  
+  #selectM .worm__segment:nth-child(2) {
+    transition-delay: 0.004s;
+  }
+  #selectM .worm__segment:nth-child(2):before {
+    animation-delay: 0.004s;
+  }
+  
+  #selectM .worm__segment:nth-child(3) {
+    transition-delay: 0.008s;
+  }
+  #selectM .worm__segment:nth-child(3):before {
+    animation-delay: 0.008s;
+  }
+  
+  #selectM .worm__segment:nth-child(4) {
+    transition-delay: 0.012s;
+  }
+  #selectM .worm__segment:nth-child(4):before {
+    animation-delay: 0.012s;
+  }
+  
+  #selectM .worm__segment:nth-child(5) {
+    transition-delay: 0.016s;
+  }
+  #selectM .worm__segment:nth-child(5):before {
+    animation-delay: 0.016s;
+  }
+  
+  #selectM .worm__segment:nth-child(6) {
+    transition-delay: 0.02s;
+  }
+  #selectM .worm__segment:nth-child(6):before {
+    animation-delay: 0.02s;
+  }
+  
+  #selectM .worm__segment:nth-child(7) {
+    transition-delay: 0.024s;
+  }
+  #selectM .worm__segment:nth-child(7):before {
+    animation-delay: 0.024s;
+  }
+  
+  #selectM .worm__segment:nth-child(8) {
+    transition-delay: 0.028s;
+  }
+  #selectM .worm__segment:nth-child(8):before {
+    animation-delay: 0.028s;
+  }
+  
+  #selectM .worm__segment:nth-child(9) {
+    transition-delay: 0.032s;
+  }
+  #selectM .worm__segment:nth-child(9):before {
+    animation-delay: 0.032s;
+  }
+  
+  #selectM .worm__segment:nth-child(10) {
+    transition-delay: 0.036s;
+  }
+  #selectM .worm__segment:nth-child(10):before {
+    animation-delay: 0.036s;
+  }
+  
+  #selectM .worm__segment:nth-child(11) {
+    transition-delay: 0.04s;
+  }
+  #selectM .worm__segment:nth-child(11):before {
+    animation-delay: 0.04s;
+  }
+  
+  #selectM .worm__segment:nth-child(12) {
+    transition-delay: 0.044s;
+  }
+  #selectM .worm__segment:nth-child(12):before {
+    animation-delay: 0.044s;
+  }
+  
+  #selectM .worm__segment:nth-child(13) {
+    transition-delay: 0.048s;
+  }
+  #selectM .worm__segment:nth-child(13):before {
+    animation-delay: 0.048s;
+  }
+  
+  #selectM .worm__segment:nth-child(14) {
+    transition-delay: 0.052s;
+  }
+  #selectM .worm__segment:nth-child(14):before {
+    animation-delay: 0.052s;
+  }
+  
+  #selectM .worm__segment:nth-child(15) {
+    transition-delay: 0.056s;
+  }
+  #selectM .worm__segment:nth-child(15):before {
+    animation-delay: 0.056s;
+  }
+  
+  #selectM .worm__segment:nth-child(16) {
+    transition-delay: 0.06s;
+  }
+  #selectM .worm__segment:nth-child(16):before {
+    animation-delay: 0.06s;
+  }
+  
+  #selectM .worm__segment:nth-child(17) {
+    transition-delay: 0.064s;
+  }
+  #selectM .worm__segment:nth-child(17):before {
+    animation-delay: 0.064s;
+  }
+
+
+
+
+  
+  /* States */
+  #selectM input:nth-of-type(1):checked ~  .worm .worm__segment:before {
+    animation-name: hop1;
+  }
+  
+  @keyframes hop1 {
+    from, to {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(1.5em);
+    }
+  }
+  #selectM input:nth-of-type(2):checked ~ .worm .worm__segment {
+    transform: translateX(6.26em);
+  }
+  #selectM input:nth-of-type(2):checked ~ .worm .worm__segment:before {
+    animation-name: hop2;
+  }
+  
+  @keyframes hop2 {
+    from, to {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(1.5em);
+    }
+  }
+
+  /* Dark mode */
+  /* @media screen and (prefers-color-scheme: dark) {
+    body {
+      background: #17181c;
+      color: #e3e4e8;
+    }
+  
+     input:checked + label,
+     input:checked + label span,
+     .worm__segment:before {
+      color: #5583f6;
+    }
+  } */
+
+
+  /* #test111{
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+  }
+  #test112{
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      display: none;
+  } */
